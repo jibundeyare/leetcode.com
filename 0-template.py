@@ -29,7 +29,7 @@ class Solution:
 solution = Solution()
 
 for data in datas:
-    result = solution.foo(data)
+    result = solution.foo(**data)
     print(f'{data=}')
     print(f'{result=}')
     print()
