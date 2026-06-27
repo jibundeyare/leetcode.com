@@ -13,6 +13,11 @@
 # Algorithmic time complexity: O(?)
 # Algorithmic space complexity: O(?)
 
+# Inspiration:
+# - None
+# - ...
+
+from mylib_leetcode import test_result
 from pprint import pprint
 from timeit import default_timer as timer
 
@@ -20,6 +25,10 @@ from timeit import default_timer as timer
 start = timer()
 
 datas = [
+    {
+        'Input': {},
+        'Output': None,
+    },
 ]
 
 class Solution:
@@ -29,7 +38,7 @@ class Solution:
 solution = Solution()
 
 for data in datas:
-    result = solution.foo(**data)
+    result = solution.foo(**data['Input'])
     print(f'{data=}')
     print(f'{result=}')
     print()

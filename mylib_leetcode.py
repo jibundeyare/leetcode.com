@@ -1,3 +1,26 @@
+from typing import Any
+
+def test_result(result: type[Any], output: type[Any]) -> None:
+    try:
+        assert type(result) == type(output), f"result and output have different data type: {type(result)} != {type(output)}"
+    except AssertionError as e:
+        print(f"AssertionError: {e}")
+
+    match type(result).__name__:
+        case 'list':
+            try:
+                assert len(result) == len(output), f"result and output have different size: {len(result)} != {len(output)}"
+            except AssertionError as e:
+                print(f"AssertionError: {e}")
+
+            for a, b in zip(result, output):
+                test_result(a, b)
+        case _:
+            try:
+                assert result == output, f"result and output have different value: {result} != {output}"
+            except AssertionError as e:
+                print(f"AssertionError: {e}")
+
 # this class is provided by leetcode.com
 # Definition for a binary tree node.
 class TreeNode:
