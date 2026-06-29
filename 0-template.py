@@ -26,7 +26,7 @@ start = timer()
 
 datas = [
     {
-        'Input': {},
+        'Input': dict(),
         'Output': None,
     },
 ]
@@ -41,6 +41,7 @@ for data in datas:
     result = solution.foo(**data['Input'])
     print(f'{data=}')
     print(f'{result=}')
+    test_result(result, data['Output'])
     print()
 
 # stop benchmark
