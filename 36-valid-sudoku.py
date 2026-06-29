@@ -56,12 +56,11 @@
 #     board[i].length == 9
 #     board[i][j] is a digit 1-9 or '.'.
 
-# Algorithmic time complexity: O(?)
-# Algorithmic space complexity: O(?)
+# Algorithmic time complexity: O(n)
+# Algorithmic space complexity: O(n)
 
 # Inspiration:
 # - None
-# - ...
 
 from mylib_leetcode import test_result
 from pprint import pprint
