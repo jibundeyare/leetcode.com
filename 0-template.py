@@ -29,10 +29,18 @@ datas = [
         'Input': dict(),
         'Output': None,
     },
+    {
+        'Input': dict(),
+        'Output': None,
+    },
+    {
+        'Input': dict(),
+        'Output': None,
+    },
 ]
 
 class Solution:
-    def foo(self, bar):
+    def foo(self):
         ...
 
 solution = Solution()
