@@ -26,7 +26,7 @@
 #
 # Constraints:
 #
-#     2 <= nums.length <= 105
+#     2 <= nums.length <= 10 ** 5
 #     -30 <= nums[i] <= 30
 #     The input is generated such that answer[i] is guaranteed to fit in a 32-bit integer.
 #

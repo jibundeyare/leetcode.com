@@ -45,9 +45,9 @@
 #
 # Constraints:
 #
-#     1 <= n == nums.length <= 5 * 10^4
-#     0 <= nums[i] <= 109
-#     1 <= k <= 105
+#     1 <= n == nums.length <= 5 * 10 ** 4
+#     0 <= nums[i] <= 10 ** 9
+#     1 <= k <= 10 ** 5
 
 # Algorithmic time complexity: O(n)
 # Algorithmic space complexity: O(1)
